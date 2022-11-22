@@ -5,14 +5,20 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
 
-        Scanner entradaEscaner = Scanner(System.in);
+        Scanner entradaEscaner = new Scanner(System.in);
 
-        System.out.println("***Bienvenido a la calculadora***");
-        System.out.println("MENÚ");
-        System.out.println("1.Resta"
-                + "2.Suma\n"
-                + "3.División\n"
-                + "4.Multiplicación\n"
-                + "5.Salir");
+        int opcion = 0;
+
+        while (opcion != 5) {
+            System.out.println("Ranking:\n"
+                    + "1.Lift Me Up - Rihanna\n"
+                    + "2.Unholy - Sam Smith & Kim Petras\n"
+                    + "3.Miss You - Oliver Tree & Robin Schulz\n"
+                    + "4.Alone - Burna Boy\n"
+                    + "5.Salir");
+
+            System.out.println("Seleccione una opcion:");
+            opcion = entradaEscaner.nextInt();
+        }
     }
 }
